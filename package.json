@@ -16,7 +16,13 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "NODE_ENV=development nodemon src/index.js"
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "start:dev": "npm run dev",
+    "lint": "./node_modules/.bin/eslint . --color && echo \"eslint: no lint errors\"",
+    "test": "jest --setupFiles dotenv/config --verbose",
+    "test:watch": "jest --setupFiles dotenv/config --watchAll --verbose",
+    "deploy:production": "heroku pipelines:promote -a quotable-api-staging",
+    "prepare": "husky install"
   },
   "dependencies": {
     "chalk": "^5.0.1",
