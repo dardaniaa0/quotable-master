@@ -5,24 +5,19 @@
   "author": "Luke Peavey",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/lukepeavey/quotable",
+  "homepage": "https://github.com/dardaniaa0/quotable-master",
   "repository": {
-    "url": "https://github.com/lukepeavey/quotable"
+    "url": "https://github.com/dardaniaa0/quotable-master"
   },
   "bugs": {
-    "url": "https://github.com/lukepeavey/quotable"
+    "url": "https://github.com/dardaniaa0/quotable-master"
   },
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "NODE_ENV=development nodemon src/index.js",
-    "start:dev": "npm run dev",
-    "lint": "./node_modules/.bin/eslint . --color && echo \"eslint: no lint errors\"",
-    "test": "jest --setupFiles dotenv/config --verbose",
-    "test:watch": "jest --setupFiles dotenv/config --watchAll --verbose",
-    "deploy:production": "heroku pipelines:promote -a quotable-api-staging",
-    "prepare": "husky install"
+    "start:dev": "npm run dev"
   },
   "dependencies": {
     "chalk": "^5.0.1",
