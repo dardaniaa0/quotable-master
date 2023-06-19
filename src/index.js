@@ -4,6 +4,8 @@ import mongoose from 'mongoose'
 import app from './app.js'
 import MongoClient from './MongoClient.js'
 
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
 async function run() {
   const db = new MongoClient()
   try {
