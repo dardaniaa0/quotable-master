@@ -35,8 +35,7 @@
     "mongodb": "^4.7.0",
     "mongoose": "^6.4.0",
     "query-string": "^7.1.1",
-    "shortid": "^2.2.15",
-    "vercel": "^28.16.2"
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
