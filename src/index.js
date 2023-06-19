@@ -8,7 +8,7 @@ async function run() {
   const db = new MongoClient()
   try {
     // Environment variables
-    const PORT = process.env.PORT || 4000
+    const PORT = process.env.PORT || 5000
     // Connect to database, then start the Express server
     await db.connect()
     app.listen(PORT, () => {
