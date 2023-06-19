@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "env": {
+      "MONGODB_URI": "mongodb+srv://dardaniaa0:dOFATvUo3rrZ42v2@cluster0.rg2ybxp.mongodb.net/?retryWrites=true&w=majority --collection test --type json --file db.js"
+    },
+    "builds": [
+      {
+        "src": "src/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/src/(.*)",
+        "dest": "src/index.js"
+      }
+    ]
+  }
