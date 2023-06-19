@@ -13,9 +13,9 @@
     "url": "https://github.com/dardaniaa0/quotable-master"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "dev": "nodemon index.js"
   },
   "dependencies": {
